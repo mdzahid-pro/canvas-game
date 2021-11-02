@@ -1,0 +1,21 @@
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+<style>
+    body{
+        margin: 0;
+        background: black;
+    }
+</style>
+<div id="modalEl" class="fixed inset-0 flex items-center justify-center">
+    <div class="bg-white max-w-md w-full p-5 text-center">
+        <h2 class="text-4xl font-bold leading-none" id="big-scoreEl">0</h2>
+        <p class="text-sm text-gray-700 my-3">Points</p>
+        <div>
+            <button class="bg-blue-500 text-white w-full py-3 rounded-full text-sm" id="startGame">Start Game</button>
+        </div>
+    </div>
+</div>
+<div class="fixed text-white ml-2 mt-1 select-none"><span>Score:</span> <span id="scoreEl">0</span></div>
+<canvas id="element"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+<script src="index.js"></script>
